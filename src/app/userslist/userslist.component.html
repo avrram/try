@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="userslist.component.css">
+<body class="bdy">
+<table class="t1">
+    <tr>
+        <td><h2 style="margin-left: 17%;">Data display</h2></td>
+        <td><a routerLink="/home">HOME</a></td>
+    </tr>
+</table>
+<!-----forms--start----->
+<div class="container">
+  <form #myform="ngForm">
+    <div class="form-group">
+      <span class="lbluname"><label  for="uname">Full Name</label></span>
+      <input type="text" class="form control" name="uname" [(ngModel)]="userObj.uname">
+    </div>
+    <div class="form-group">
+      <span class="lblmobile"><label for="mobile">mobile number</label></span>
+      <input type="text"  class="form control" name="mobile" [(ngModel)]="userObj.mobile">
+    </div>
+    <div class="form-group">
+      <span class="lblemail"><label for="email">email</label></span>
+      <input type="text" class="form control" name="email" [(ngModel)]="userObj.email">
+    </div>
+    <div class="form-group">
+      <span class="lblpassword"><label for="password">password</label></span>
+      <input type="text" class="form control" name="password" [(ngModel)]="userObj.password">
+    </div>
+    
+    <button class="sbtbtn" type="submit" (click)="addUser(myform.value)" *ngIf="!isEdit">submit</button>
+    <button class="updbtn"type="submit" (click)="updateuser()" *ngIf="isEdit">update</button>
+    
+  </form>
+</div>
+<!----forms--end------>
+<table border=1 align="center" class="t2">
+  <tr>
+    <th>Name</th>
+    <th>mobile</th>
+    <th>email</th>
+    <th>password</th>
+    <th>Action</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let user of ulist">
+    
+    <td align="center">{{ user.uname }}</td>
+    <td align="center">{{ user.mobile }}</td>
+    <td align="center">{{ user.email }}</td>
+    <td align="center">{{ user.password }}</td>
+    <td align="center"><button class="delBtn" type="button" (click)="editUser(user)">EDIT</button></td>
+    <td align="center"><button class="delBtn" type="button" (click)="deleteUser(user)">DELETE</button></td>
+  </tr>
+</table>
+</body>
+
+
+

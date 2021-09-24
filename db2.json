@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "uname": "Prathyusha",
+      "mobile": "9000469221",
+      "email": "abc@g.com",
+      "password": "xxx",
+      "id": 6
+    },
+    {
+      "uname": "raghuram",
+      "mobile": "9849598474",
+      "email": "avr@gmail.com",
+      "password": "yakov",
+      "id": 9
+    },
+    {
+      "uname": "adapa",
+      "mobile": "9000469221",
+      "email": "1234@gmail.com",
+      "password": "leo",
+      "id": 10
+    },
+    {
+      "uname": "niharika",
+      "mobile": "970426697",
+      "email": "niha@gmail.com",
+      "password": "pwd",
+      "id": 11
+    },
+    {
+      "uname": "raghuram",
+      "mobile": "9849598474",
+      "email": "avr@gmail.com",
+      "password": "yakov",
+      "id": 12
+    },
+    {
+      "uname": "Bindu",
+      "mobile": "970426697",
+      "email": "harshini@gmail.com",
+      "password": "xxx",
+      "id": 13
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+.bdy{
+    height: 600px;
+    background: radial-gradient(white 30%,#b491cb);
+}
+.t1{
+    width: 80%;
+} 
+.t2{
+    width: 80%;
+    margin-top: 50px;
+    
+   
+} 
+.delBtn{
+    cursor: pointer;
+}
+.container{
+    padding-left: 10%;
+}
+.lbluname{
+    padding-right: 30px;
+}
+.lblmobile{
+    padding-right: 0px;
+}
+.lblemail{
+    padding-right: 62px;
+}
+.lblpassword{
+    padding-right: 38px;
+}
+
+.updbtn{
+    margin-top: 20px;
+    margin-left: 216px;
+}
+.sbtbtn{
+    margin-top: 20px;
+    margin-left: 216px;
+}
+h2{
+    color: blueviolet;
+}
+   
