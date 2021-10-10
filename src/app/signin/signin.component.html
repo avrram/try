@@ -1,0 +1,24 @@
+<p>signin works!</p>
+<link rel="stylesheet" href="signin.component.css">
+<body class="bdy">
+<table class="t1">
+    <tr>
+        <td><h2 style="margin-left: 17%;">LOGIN</h2></td>
+        <td><a routerLink="/home">HOME</a></td>
+    </tr>
+</table>
+<!-----forms--start----->
+<div class="container">
+    <form #myform="ngForm" (ngSubmit)='authuser(myform)'>
+      <div class="form-group">
+        <span class="lbluname"><label  for="uname">Full Name</label></span>
+        <input type="text" class="form control" name="uname" [(ngModel)]="userObj.uname" required>
+      </div>
+      <div class="form-group">
+        <span class="lblpassword"><label for="password">password</label></span>
+        <input type="text" class="form control" name="password" [(ngModel)]="userObj.password" required>
+      </div>
+      <button [disabled]="!myform.valid" class="updbtn"type="submit">Login</button>
+    </form>
+</div>
+<!----forms--end------>

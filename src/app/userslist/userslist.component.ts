@@ -47,6 +47,17 @@ userObj={
         this.getLatestUsers();
         })
       }
-
+     authuser(){
+      this.rst.getUsers().subscribe((response)=>{
+        this.ulist = response;
+        const usr= this.ulist.find(p=>p.uname==this.userObj.uname && p.password==this.userObj.password);
+        if(usr){
+          alert("success");
+        }else{
+          alert("unauthorized");
+        }
+                console.log(response);
+        }, (error) => console.log(error))
+     }
 
 }

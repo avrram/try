@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RestService } from './rest.service';
 import { UserslistComponent } from './userslist/userslist.component';
 import { FormsModule } from '@angular/forms';
+import { SigninComponent } from './signin/signin.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { FormsModule } from '@angular/forms';
  AppComponent,
 routingComponents,
 UserslistComponent,
+SigninComponent,
 
   ],
   imports: [
@@ -20,7 +22,8 @@ UserslistComponent,
     AppRoutingModule, 
     HttpClientModule,
     FormsModule
-  ],
+  
+      ],
   providers: [RestService],
   bootstrap: [AppComponent]
 })

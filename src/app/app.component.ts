@@ -4,6 +4,7 @@ import {Users} from 'src/app/users';
 import { RouterModule, Routes, UrlSegment } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 @Component({
